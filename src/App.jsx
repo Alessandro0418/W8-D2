@@ -4,6 +4,8 @@ import CustomFooter from "./components/MyFooter";
 import Welcome from "./components/Welcome";
 import AllTheBooks from "./components/AllTheBooks";
 import "./App.css";
+import BookList from "./components/BookList";
+import books from "./data/history.json";
 
 function App() {
   return (
@@ -13,9 +15,9 @@ function App() {
         <div className="d-flex align-items-center justify-content-center mt-3">
           <Welcome />
         </div>
-        <AllTheBooks />
+        {/* <AllTheBooks /> */}
+        <BookList libri={books} />
       </main>
-      <div className="container flex-grow-1 d-flex align-items-center justify-content-center"></div>
       <CustomFooter />
     </div>
   );

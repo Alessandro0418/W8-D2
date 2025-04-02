@@ -6,9 +6,9 @@ const AllTheBooks = function () {
     <Container>
       <h2>History Books</h2>
       <Row className="g-4">
-        {books.map((libro, index) => (
-          <Col key={index} md={4}>
-            <Card style={{ width: "18rem" }}>
+        {books.map((libro) => (
+          <Col key={libro.asin} md={4}>
+            <Card>
               <Card.Img variant="top" src={libro.img} />
               <Card.Body>
                 <Card.Title>{libro.title}</Card.Title>
